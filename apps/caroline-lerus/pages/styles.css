@@ -18,6 +18,15 @@ p,
 pre {
   margin: 0;
 }
+h1 {
+  font-size: 4.6vw;
+}
+h2 {
+  font-size: 3vh;
+}
+p {
+  font-size: 2vmin;
+}
 *,
 ::before,
 ::after {

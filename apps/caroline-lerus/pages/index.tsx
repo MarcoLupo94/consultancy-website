@@ -1,5 +1,6 @@
 import Hero from '../app/hero/hero';
 import NavBar from '../app/nav-bar/nav-bar';
+import Services from '../app/services/services';
 import styles from './index.module.css';
 
 export function Index() {
@@ -7,7 +8,7 @@ export function Index() {
     <div className={styles.page}>
       <NavBar />
       <Hero />
-      <section id="services">Services</section>
+      <Services />
       <section id="about">About</section>
       <section id="work">Past Work</section>
       <section id="contact-me">Contact Me</section>
