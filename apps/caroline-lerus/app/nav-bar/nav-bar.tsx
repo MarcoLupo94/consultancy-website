@@ -5,8 +5,8 @@ export interface NavBarProps {}
 
 export function NavBar(props: NavBarProps) {
   return (
-    <div className={styles['container']}>
-      <h1>CLR 👩🏾‍🍳</h1>
+    <nav className={styles['container']}>
+      <h3>CLR 👩🏾‍🍳</h3>
       <ul className={styles['links']}>
         {' '}
         <li>
@@ -26,7 +26,7 @@ export function NavBar(props: NavBarProps) {
           <a href="#contact-me">ContactMe</a>{' '}
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
 
