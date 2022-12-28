@@ -1,3 +1,4 @@
+import { MantineProvider } from '@mantine/core';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 
@@ -10,9 +11,18 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Welcome to caroline-lerus!</title>
       </Head>
-      <main className="app">
-        <Component {...pageProps} />
-      </main>
+      <MantineProvider
+        withGlobalStyles
+        withNormalizeCSS
+        theme={{
+          /** Put your mantine theme override here */
+          colorScheme: 'light',
+        }}
+      >
+        <main className="app">
+          <Component {...pageProps} />
+        </main>
+      </MantineProvider>
     </>
   );
 }
