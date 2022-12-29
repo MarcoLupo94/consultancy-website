@@ -7,7 +7,11 @@ export interface ServicesProps {}
 
 export function Services(props: ServicesProps) {
   return (
-    <section className={styles['container']} id="services">
+    <section
+      className={styles['container']}
+      id="services"
+      style={{ height: '100%' }}
+    >
       <ul className={styles['list']}>
         <li>
           <MdOutlineDesignServices />

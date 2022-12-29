@@ -1,3 +1,4 @@
+import ContactMe from '../app/contact-me/contact-me';
 import Hero from '../app/hero/hero';
 import NavBar from '../app/nav-bar/nav-bar';
 import Services from '../app/services/services';
@@ -10,9 +11,9 @@ export function Index() {
       <NavBar />
       <Hero />
       <Services />
-      <section id="about">About</section>
       <Work />
-      <section id="contact-me">Contact Me</section>
+      <ContactMe />
+      {/* <section id="about">About</section> */}
     </div>
   );
 }
